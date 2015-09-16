@@ -228,7 +228,7 @@ class RefResolver
             return;
         }
 
-        if (!empty($refDoc)) {
+        if (empty($refDoc)) {
             $refSchema = $this->fetchRef($refDoc, $sourceUri);
         } else {
             $refSchema = $this->rootSchema;
